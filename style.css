@@ -1,0 +1,383 @@
+*{
+    margin: 0;/*space outside the element*/
+    padding: 0;/*space to leave from border to stuff in an element*/
+    box-sizing: border-box;
+    text-decoration: none;
+   ;
+}
+
+/*navbar styling*/
+.navbar{
+    background:#161111;
+    opacity: 0.9;
+    width:100%;
+    padding: 30px 0;/*top right left bottem*/
+    position: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+.logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.horizenbar{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;/* property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally).*/
+    padding: 0px 80px;/*created space bw p of port and end of screen*/
+}
+.menu li {
+    list-style: none;
+    display: inline-block; /*sets wether element is treated inlin e or block basically reason why list is horizontal not vertical now*/
+}
+.spool{  /*span id for word folio so we can select it and change it color*/
+    color:crimson;
+}
+.menu li a{
+    color:#fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin:25px;/*to space them out those links increase margin around them*/
+    transition: color 0.3s ease; /* to fade in red color smoothly*/
+}
+.menu li a:hover{
+    color: crimson;
+
+}
+.home{
+    display:flex;
+    color: #fff;
+    background:url("./photo2.jpg") no-repeat center ;
+    height:100vh;
+    min-height: 500px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.max-width{
+    margin: auto 0 auto 20px; /*top right bottem left*/
+}
+.text-1{
+    font-size: 45px;
+    font-family: "popins",sans-serif;
+}
+.text-2{
+    font-size: 85px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.text-3{
+    font-size: 40px;
+    margin: 1px 0;
+    font-weight: 400;
+    
+}
+.spill{
+    color: crimson;
+    font-size: 60px;
+    font-weight: 500;
+}
+.home-content a{
+    display: inline-block;
+    background: crimson;
+    color:#fff;
+    font-size: 35px;
+    padding: 18px 36px; /* top left and right bottem*/
+    margin-top: 20px;/*space bw hire me and im a coder*/
+    border-radius: 6px;
+    border: 2px  solid crimson;
+    transition:all 0.3s ease;
+}
+.home-content a:hover{
+    color:crimson;
+    background: none;
+    }
+
+    /*about section with a photo*/
+ section{
+     padding: 100px 0;
+
+ }
+ /*doing alll colors and alignment and fonts toabout text and paragraph*/
+ .about{
+     font-family: "popins",sans-serif;
+     width: 100%;
+   
+     
+     
+     
+ }
+ /*about section starts here*/
+ 
+ .title{
+     
+    font-family: 'Yusei Magic', sans-serif;
+    margin-left: 46%;
+    
+   font-size: 3rem;
+}
+ .title2{
+
+     font-family: 'Yusei Magic', sans-serif;
+     color: crimson;
+     font-size: 2rem;
+     margin-left: 48%;
+
+     
+ } 
+ 
+ .about-content{
+  display:inline-flex/*to stretch content and put photo and text divs inline*/
+ }
+ .column-left{
+     margin-left:10% ;
+     
+ }
+ 
+ .column-right{
+     margin-left: 150px;
+ }
+
+ .img-eye{
+    
+     
+     border-radius: 6px;
+     box-shadow: 10px 10px 5px rgba(168, 16, 16, 0.719)
+ }
+
+ 
+ .text{
+    
+     font-size: 60px;
+     font-family: 'Ubuntu Condensed', sans-serif;
+   
+      ;
+     
+    
+ }
+ .paara{
+     
+font-size: 25px;
+font-family: 'Roboto', sans-serif;
+
+;/* last way of resort if things dont move*/
+}
+.parta1{
+    font-size: 27px;
+    font-family:'Yusei Magic', sans-serif; 
+    color: crimson;
+ 
+}
+.special,.bul{
+    color: crimson;
+
+}
+
+/*styling skill section*/
+.skillsheading{
+    text-align: center;
+    color: #f00;
+    font-size: 60px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    margin-bottom: -10%;
+}
+.skillsheading:hover{
+    color: #161111;
+    font-size: 80px;
+    transition: 0.5s ease-out;
+}
+.skillsheading i:hover{
+    color: #161111;
+    font-size: 80px;
+    transition: 0.5s ease-in;
+}
+.skills{
+    background: url(./2ndback.jpg);
+    box-shadow: 10px 10px 8px #a30707ad;
+    width: 100%;
+    height: 100vh;
+ 
+}
+/*styling our card and animating it*/
+.container{
+    position: relative;
+    width: 1300px;
+    height: 300px;
+    margin: 240px auto;
+    display: flex;
+}
+.container .box
+{
+    position: relative;
+    width:400px;
+    height: 450px;
+    background: rgba(0, 0, 0, 0.185);
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;/*The overflow property specifies what should happen if content overflows an element's box.
+
+
+    This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.*/
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px #888888;
+}
+.container .box .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.5s;
+    z-index: 1;
+
+}
+.container .box:hover .icon{
+    top:20px;
+    top: 50px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.container .box .icon 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);/*epositions an element in the horizontal and/or vertical directions. Its result is a <transform-function> data type.*/
+    font-size: 65px;
+    transition: 0.5s ease-in-out;
+    color: #fff;
+    text-align: center;
+    
+}
+.container.box:hover .icon 
+{
+    font-size: 40px;
+}
+.container .box .content{
+    position: absolute;
+    top:100%;
+    height:calc(100%-100px);
+    text-align:center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.6s ease;
+}
+.container .box:hover .content{
+    top: 100px;/*so text comes like a transition*/
+}
+.name{
+    margin: 0;
+    padding:0;
+    color:crimson;
+    font-size: 24px;
+    font-family: "popins",sans-serif;
+}
+.para{
+    margin-left: 10%;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.719);
+    font-size:20px ;
+}
+/*footer styling*/
+.footer-main{
+    width: 100%;
+    height: auto;
+    height: auto;
+    background:#f00;
+    
+    padding:20px 0px;
+    display: flex;
+}
+.social-icons{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.social-icons ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+.social-icons ul li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin:0px 10px;
+    border-radius: 100%;
+    background: #fff;
+}
+.social-icons ul li a{
+    color: #888888;
+    font-size: 25px;
+}
+.social-icons ul li a i{
+    line-height: 50px;
+    margin-left: 30%;
+}
+.textinfo{
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    margin-right: 30px;
+    
+}
+.social-icons ul li a i:hover{
+    color:#f00;
+    transition: 0.5s ease-in;
+
+}
+@media screen and (max-width:768px){
+        
+    .navbar{
+        
+        height: fit-content;
+        align-items: center;
+        position: relative;
+    }   
+    .horizenbar{
+        align-items: center;
+       
+    } 
+    
+     .tut1{
+         align-items: center;
+         width: 100%;
+         display: flex;
+      }
+      .about-content{
+          display:block;
+      }
+      .title{
+          margin-right: 25%;
+        }
+    .title2{
+        margin-right: 30%;
+    }
+    .column-left img{
+        margin-left: 15%;
+    }
+    .column-right{
+        margin-right: 25%;
+        padding-top: 5%;
+
+    }
+    .container{
+        width: 100%;
+        display: block;
+        text-align: center; 
+    }
+    .skills{
+        background: url(./2ndback.jpg) ;
+        background-repeat: repeat;
+        box-shadow: 10px 10px 10px #a30707ad;
+        height: 100%;
+        
+      
+        height:20% ;
+    }
+   .box{
+       margin-left: ;
+   }
+
+}
